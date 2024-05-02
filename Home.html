@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asia-Pacific International University</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("pict.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      display: flex; /* Fixed syntax error */
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 2em;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .menu ul li {
+      margin: 0 10px;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+    }
+
+    .menu ul li a:hover {
+      color: #ff7200;
+    }
+
+    .menu ul li i {
+      margin-right: 5px;
+    }
+
+    main {
+      padding: 20px;
+      color: #fff;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #ff7200;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #ff9200;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-university"></i> Asia-Pacific International University
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="./Home.html">Home <i class="fas fa-home"></i></a></li>
+        <li><a href="./Contact.html">Contact Us <i class="fas fa-info-circle"></i></a></li>
+        <li><a href="./Programs.html">Programs <i class="fas fa-graduation-cap"></i></a></li>
+        <li><a href="studentlife.html">Student Life <i class="fas fa-users"></i></a></li>
+        <li><a href="#">Research</a></li>
+        <li><input type="text" placeholder="Search"></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome To Asia-Pacific International University</h1>
+    <section class="hero">
+      <h2>Turn ambition into action.</h2>
+      <p>The International University is a leading institution that provides students with the opportunity to learn from world-renowned faculty and pursue their academic goals in a supportive and vibrant environment.</p>
+    </section>
+
+    <section>
+      <h2>Why Choose Us?</h2>
+      <p>At International University, we offer a variety of benefits to our students, including:</p>
+      <ul>
+        <li>Small class sizes and personalized attention</li>
+        <li>A diverse and international student body</li>
+        <li>A wide range of academic programs</li>
+        <li>Opportunities for research and internships</li>
+        <li>A beautiful and vibrant campus location</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Get Started Today!</h2>
+      <p>Ready to take the next step in your academic journey? Apply to International University today!</p>
+      <button onclick="window.location.href='./applications.html'" id="applyButton">Apply Now</button>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Sameh Gerges 2024</p>
+  </footer>
+
+  <script>
+    document.getElementById('applyButton').addEventListener('click', function(event) {
+      alert('You clicked Apply for 2024!');
+    });
+  </script>
+</body>
+
+</html>
